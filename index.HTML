@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/reset.css">
+    <link rel="stylesheet" href="Styles/style.css">
+    <title>AluraGeek</title>
+</head>
+<body>
+    <header class="header">
+        <img src="https://www.eluniverso.com/resizer/gNmAMKFiWwtn5FV2hLBjt6VXmps=/228x168/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/CSLEU7BXXVFKLLMYBRPMPP26W4.jpg" alt="Geek">
+        <h2>Zona Geek</h2>
+    </header>
+    <main class="main-container">
+        <section>
+            <hi>Mis Productos</hi>
+            <div data-product class="products-container">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_975969-MLA46467090682_062021-O.wep" alt="img">
+                    </div>
+                <div class="card-container--info">
+                    <p>DartVader</p>
+                <div class="card-container--value">
+                    <p>$ 20</p>
+                    <button class="delete-button" data-id="$(id)">
+                        <img src="Trash.svg" alt="Eliminar">
+                    </button>
+                </div>
+
+            </div>
+        </section>
+        
+        <section>
+            <h1>Agregar Producto:</h1>
+            <form class="form-container" data-form>
+                <input data-name placeholder="nombre..." type="text">
+                <input data-price placeholder="precio..." type="number">
+                <input data-image placeholder="imagen..." type="text">
+
+                <div class="button-container">
+                    <button type="submit" class="button-submit" id="button"> Enviar...</button>
+                    <button type="reset" class="button-clear" id="button"> Limpiar...</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="copyrigth">© Copyrigth Alura 2024</p>
+        <p>By Diego Daniel Mendoza Solano</p>
+    </footer>
+        <script type="module" src="js/Service/product-services.js"></script>
+        <SCript type="module" src="js/Controllers/main.js"></SCript>
+</body>
+</html>
